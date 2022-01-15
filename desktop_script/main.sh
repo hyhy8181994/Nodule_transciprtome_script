@@ -515,6 +515,20 @@ python NCR_tpm.py -i /home/rui-huang/Documents/RNA_seq_doc/pfam/NCR_high_confide
 
 #predict pI values of each NCR peptides )
 #use pIR.R R script need (tab separate NCR mature peptide id and sequences)
+#the output file is NCR_PI_table.txt
+
+# run clustering.R script (the first part) to output alignment distance matrix (file name is alg_data_matrix.txt)
+
+# run make_NCR_clustering_table.py to create a NCR peptide data table for clustering
+python3 make_NCR_clustering_table.py
+#that output file is NCR_data_table.txt
+
+#then run the rest of the clustering.R script to create the cluster_assignment.txt file
+
+# run NCR_clusters_tpm.pyto create NCR peptide tpm with group assignment table
+
+
+# run make_NCR_peptide_table.py to create NCR peptide data table
 
 
 
