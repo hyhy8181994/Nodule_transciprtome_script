@@ -3,7 +3,7 @@ import argparse
 
 parser = argparse.ArgumentParser(description='set up input file list (generate comma separate file list)')
 parser.add_argument('-i',required=True,help='location of input reads')
-parser.add_argument('-o',required=False,default= "no", help='name of output folder')
+parser.add_argument('-o',required=True,default= "no", help='name of output folder')
 parser.add_argument('-e',required=False,default= ".fq",help='file extention name')
 parser.add_argument('-s',required=False,default= ",",help='file separater')
 parser.add_argument('-p',required=True,help='name of plant')
